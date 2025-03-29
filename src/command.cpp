@@ -13,6 +13,9 @@ void command::handle_input(std::string input) {
         tokens.push_back(token);
     }
 
+    if (!tokens.size())
+        return;
+
     if (commands.find(tokens[0]) != commands.end()) {
         std::vector<std::string> params(tokens.begin() + 1, tokens.end());
         commands[tokens[0]](params);

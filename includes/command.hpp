@@ -19,4 +19,5 @@ namespace command {
 };
 
 
-#endif //LITTLECLI_COMMAND_HPP
+#endif //LITTLECLI_COMMAND
+// _HPP
